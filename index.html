@@ -12,29 +12,59 @@
   <link rel="stylesheet" href="styles/index.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  
-</head>
-<body>
-  <div class="app">
-    <main>
-      <div class="container">
-        <img src="assets/logo.svg" alt="Logo">
-      </div>
-      <div class="back">
-        <a href="#">
-          <img src="assets/link button.svg" alt="ícone de voltar">
-        </a>
-        <h1>Compras da semana</h1>
-      </div>         
-    </main>
-    <form>
-      <div class="item">
-        <input id="input" type="text" placeholder="Adicione um novo item">
-        <button class="btn">Adicionar item</button>
-      </div>
-    </form>
 
-  </div>
+  </head> 
+  <body>
+    <main class="container">
+      <a href="#" id="logo">
+        <img class="animation" src="assets/Frame.svg" alt="">
+        <img src="assets/logo.svg" alt="logotipo">
+        <img class="animation" src="assets/imprimir.svg" alt="">
+      </a>
+      <div>
+        <a href="#">&lt;- Voltar</a>
+      </div>
+      <h1>Compras da semana</h1>
+      <form>
+        <div class="input-wrapper">
+          <div>
+            <input class="input" type="text" placeholder="Adicione um novo item">
+            <button class="button" type="submit">Adicionar item</button>
+          </div>
+          <span class="input-warning hidden">
+            <img src="assets/warning-circle-filled.svg" alt="">
+            <small>O campo precisa ser preenchido!</small>
+          </span>
+          <div class="shopping">
+            <h1>Lista de compras</h1>
+          </div>
+        </div>
+        <div role="list">
+          <div role="listitem">
+            <input type="checkbox" name="" id="">
+            <span>Pão de forma</span>
+            <img src="assets/Frame-3.svg" alt="lixeira">
+          </div>
+          <div role="listitem">
+            <input type="checkbox" name="" id="">
+            <span>Café</span>
+            <img src="assets/Frame-3.svg" alt="lixeira">
+          </div>
+          <div role="listitem">
+            <input type="checkbox" name="" id="">
+            <span>Bolacha</span>
+            <img src="assets/Frame-3.svg" alt="lixeira">
+          </div>
+        </div>
+        <div class="warning hidden">
+          <img src="assets/warning-circle-filled.svg" alt="">
+          <span>O item <span class="item"></span> foi removido da lista</span>
+          <img src="assets/delete-small.svg" alt="lixeira">
+        </div>
+      </form>
+    </main>
   
-</body>
-</html>
+    <script src="script.js"></script>
+  </body>
+  
+  </html>
