@@ -1,0 +1,31 @@
+main {
+  padding-block: 1.5625rem 8.5625rem;
+  & #logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3.875rem;
+  }
+  & h1 {
+    font: var(--title);
+    color: var(--content-primary);
+    padding-block: 1rem 2.75rem;
+  }
+
+  & .shopping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    padding-bottom: .01rem;
+  }
+}
+
+.animation {
+  width: 1.5rem;
+  transition: transform 0.5s;
+}
+
+.animation:hover {
+  transform: rotate(90deg);
+}
