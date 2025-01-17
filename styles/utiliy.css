@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.input-wrapper {
+  & > div {
+    display: flex;
+    gap: 1rem;
+    & > input {
+      height: 2.75rem;
+      color: var(--color-content-primary);
+      font: var(--font-input);
+
+      flex: 1;
+      border-radius: 0.75rem;
+      border: 2px solid var(--color-border-primary);
+      background-color: var(--color-background-secondary);
+      padding: 0.6875rem 1.125rem;
+      &:hover {
+        border-color: var(--color-border-primary-hover);
+      }
+      &:focus {
+        border-color: var(--color-brand-hover) !important;
+        outline: none;
+      }
+      &::placeholder {
+        color: var(--color-content-tertiary);
+      }
+      &.warning-border-color {
+        border-color: var(--color-danger);
+      }
+    }
+  }
+}
+
+.input-warning {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.2em;
+  color: var(--color-danger);
+  font: var(--font-label);
+  font-weight: 500;
+
+  & > img {
+    filter: invert(36%) sepia(34%) saturate(6484%) hue-rotate(334deg)
+      brightness(83%) contrast(88%);
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+
+div[role="list"] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+
+  & div[role="listitem"] {
+    height: 3.0625rem;
+    background-color: var(--color-background-secondary);
+    border-radius: 0.75rem;
+    font: var(--font-paragraph);
+    color: var(--color-content-secondary);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-inline: 0.75rem;
+
+    & > span {
+      flex: 1;
+    }
+
+    & > img[src*="rubbish-bin"] {
+      width: 2rem;
+      height: 2rem;
+      &:hover {
+        filter: invert(26%) sepia(28%) saturate(3775%) hue-rotate(298deg)
+          brightness(87%) contrast(93%);
+      }
+    }
+  }
+}
+
+.warning {
+  font: var(--font-label);
+  color: var(--color-always-white);
+  background-color: var(--color-danger);
+  border-radius: 0.75rem;
+  margin-top: 2.25rem;
+  padding: 0.75rem;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  & > span {
+    flex: 1;
+  }
+  & > img[src*="close"] {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  & > img[src*="warning-circle"] {
+    width: 1.166875rem;
+    height: 1.166875rem;
+  }
+}
+
+.hidden {
+  display: none;
+}

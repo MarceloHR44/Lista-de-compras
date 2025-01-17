@@ -1,0 +1,27 @@
+input[type="checkbox"] {
+  all: unset;
+  position: relative;
+
+  --size: .875rem;
+  cursor: pointer;
+  height: var(--size);
+  width: var(--size);
+
+  border: 1px solid var(--border-primary);
+  background-color: var(--bg-secondary);
+  border-radius: 0.375rem;
+  &:hover {
+    border-color: var(--border-hover);
+  }
+  &:checked {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url(../assets/state=selected.svg) left center/contain no-repeat;
+      cursor: pointer;
+    }
+  }
+}
