@@ -1,0 +1,18 @@
+button {
+  font: var(--label);
+  background-color: var(--color-brand);
+  color: var(--always-white);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  &:hover {
+    background-color: var(--color-brand-hover);
+    cursor: pointer;
+  }
+
+  & .button {
+    flex-basis: 50%;
+    padding: .625rem;
+    
+  }
+}
